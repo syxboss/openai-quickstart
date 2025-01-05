@@ -30,6 +30,7 @@ class Writer:
         LOG.info(f"开始翻译: {output_file_path}")
 
         # Register Chinese font
+        # 相对路径有问题，使用的绝对路径实现，请在此处换为绝对路径
         font_path = "../fonts/simsun.ttc"  # 请将此路径替换为您的字体文件路径
         pdfmetrics.registerFont(TTFont("SimSun", font_path))
 
